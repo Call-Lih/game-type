@@ -17,8 +17,8 @@ jobs:
 
       - name: Verify
         run: |
-           echo "FILE DIUBAH"
-           git diff --name.status HEAD^ HEAD
+           echo "=== FILE DIUBAH ==="
+           git diff --name-status HEAD^ HEAD
 
       - name: Deploy
         uses: Samkirkland/FTP-Deploy-Action@v4.3.5
